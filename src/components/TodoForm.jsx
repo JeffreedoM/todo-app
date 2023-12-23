@@ -5,7 +5,7 @@ export default function TodoForm() {
         <input
           type="text"
           placeholder="Create a new todo..."
-          className="shadow-9 bg-secondary placeholder:text-primary w-full rounded p-3.5 pr-5 outline-none placeholder:font-semibold"
+          className="shadow-9 bg-secondary dark:text-dark-accent dark:bg-dark-secondary placeholder:text-primary placeholder:dark:text-dark-500 w-full rounded p-3.5 pr-5 outline-none placeholder:font-semibold"
         />
       </div>
     </div>

@@ -7,7 +7,7 @@
 
 @layer base {
   body {
-    @apply bg-primary;
+    @apply bg-primary dark:bg-dark-primary;
     font-family: "Open Sans", sans-serif;
     height: 100vh;
   }
