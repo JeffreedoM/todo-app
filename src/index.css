@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
+
+@layer base {
+  body {
+    @apply bg-primary;
+    font-family: "Open Sans", sans-serif;
+    height: 100vh;
+  }
+}
+
+.wrapper {
+  @apply mx-auto w-full max-w-screen-md;
+}
+
+.shadow-9 {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
