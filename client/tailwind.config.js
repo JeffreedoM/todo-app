@@ -10,6 +10,7 @@ export default {
         primary: "#d6f2fc",
         secondary: "#f0f8fc",
         accent: "#48cae4",
+        accent2: "#023e8a",
         // dark mode
         dark: {
           primary: "#1c2730",
