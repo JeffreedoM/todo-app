@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function useThemeChanger() {
   const [isDarkMode, setIsDarkMode] = useState(false);

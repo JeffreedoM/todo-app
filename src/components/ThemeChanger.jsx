@@ -9,7 +9,7 @@ export default function ThemeChanger({ toggleDarkMode }) {
   };
 
   return (
-    <div className="text-primary dark:text-dark-accent flex items-center gap-2">
+    <div className="flex items-center gap-2 text-primary dark:text-dark-accent">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="20"

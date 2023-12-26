@@ -1,17 +1,17 @@
 import { useState } from "react";
 import { ImCross } from "react-icons/im";
 
-export default function TodoList() {
+export default function TodoList({ todo }) {
   const [check, setCheck] = useState(false);
 
   return (
     <div
-      className={`border-b-primary dark:border-dark-accent mb-5 flex w-full items-center border-b p-4 ${
+      className={`mb-5 flex w-full items-center border-b border-b-primary p-4 dark:border-dark-accent ${
         check && "opacity-30"
       } `}
     >
       {/* checkbox */}
-      <div className="bg-secondary dark:bg-dark-500 border-primary/[0.3] mr-8 h-6 w-6 rounded-sm border">
+      <div className="mr-8 h-6 w-6 rounded-sm border border-primary/[0.3] bg-secondary dark:bg-dark-500">
         <input
           onChange={(e) => setCheck(!check)}
           checked={check}
@@ -21,15 +21,14 @@ export default function TodoList() {
       </div>
       {/* text */}
       <h1
-        className={`text-primary dark:text-dark-primary w-full pr-3 font-semibold ${
+        className={`w-full pr-3 font-semibold text-primary dark:text-dark-primary ${
           check && "line-through"
         }`}
       >
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis,
-        sed.
+        {todo.todo}
       </h1>
       {/* delete icon */}
-      <button className="text-primary dark:text-dark-accent text-lg">
+      <button className="text-lg text-primary dark:text-dark-accent">
         <ImCross />
       </button>
     </div>
